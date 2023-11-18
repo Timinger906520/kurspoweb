@@ -1,0 +1,228 @@
+body{
+    margin: 0;                              /*убирает отступы от всех краев*/
+    background-image: url(https://altanschool.s3.eu-central-1.amazonaws.com/learns/1697021662483_headerpic.jpg); /*изображение фона*/
+    background-size: 100%;                  /*размер фона*/
+    background-position-y: -50px;           /*изображение чуть поднято наверх*/
+    background-attachment: fixed;           /*фиксация фона*/
+}
+
+header{
+    height: 100%;               /*высота*/
+    padding: 30px;          /*внутренний отступ*/
+    text-align: right;      /*текст выровнени влево*/
+    color: rgb(0, 0, 91); /*цвет текста*/
+    font-size: 25px;        /*размер текста*/
+}
+
+h1{
+    padding-top: 50px;  /*Дополнительный отступ заголовка*/
+    font-size: 80px;    /*размер заголовка*/
+    color:rgb(255, 255, 255);  /*цвет*/
+}
+
+main{
+    height: 1000px;   /*высота основной части*/
+    display: flex;
+}
+
+footer{
+    height: 100%;    /*высота*/
+    text-align: left;  /*текст выровннен влево*/
+    padding: 50px;   /*внутренний оступ*/
+    color: white;  /*цвет текста*/
+    font-size: 20px;  /*размер текста*/
+}
+
+.social{
+    list-style: none; /*убирает маркеры*/
+    display: flex; /*отображает в ряд*/
+    align-items: left; /*выравнивает иконки по центру внутри каждого пункта*/
+    justify-content: left; /*выравнивает все иконки по центру страницы*/
+    margin: 0;
+    padding: 0;
+}
+
+.social li {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.Block1 {
+    height: 100%;
+    width: 25%;
+    background-color: orange;
+}
+.Block2 {
+    height: 100%;
+    width: 25%;
+    background-color: green;
+}
+.Block3 {
+    height: 100%;
+    width: 25%;
+    background-color: rgb(0, 195, 255);
+}
+.Block4 {
+    height: 100%;
+    width: 25%;
+    background-color: yellow;
+}
+.Block1 li{
+background: repeating-conic-gradient( red 0%,  yellow 15%, blue 33% );
+    background-color: crimson;
+    line-height: 2em;
+    margin-top: 10px;
+    border-radius: 2em;
+    width: 60%;
+    padding-left: 10px;
+    height: 100px;
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-type: "\2705";
+}
+.Block1 li:hover{
+    background-color: aqua;
+    color: crimson;
+list-style-type: "\274C";
+width: 70%;
+height: 125px;
+}
+.Block2 li{
+    background: linear-gradient( to left, green, blue);
+    background-color: blueviolet;
+    line-height: 2em;
+    margin-top: 15px;
+    border-radius: 3em;
+    width: 50%;
+    padding-left: 10px;
+    height: 70px;
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-type: "\2705";
+}
+.Block2 li:hover{
+    background-color: rgb(255, 0, 0);
+    color: gold;
+list-style-type: "\274C";
+width: 70%;
+height: 125px;
+}
+.Block3 li{
+    background: radial-gradient(circle at right, #f42424, #fff700);
+    background-color: blueviolet;
+    line-height: 3em;
+    margin-top: 10px;
+    border-radius: 4em;
+    width: 50%;
+    padding-left: 10px;
+    height: 70px;
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-type: "\2705";
+}
+.Block3 li:hover{
+    background-color: rgb(255, 0, 0);
+    color: gold;
+list-style-type: "\274C";
+width: 50%;
+height: 140px;
+}
+.Block4 li{
+ background-image: conic-gradient(at 60% 45%, rgb(255, 0, 144), rgb(195, 0, 255), rgb(49, 255, 8));
+    background-color: blueviolet;
+    line-height: 3em;
+    margin-top: 15px;
+    width: 70%;
+    padding-left: 10px;
+    height: 125px;
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-type: "\2705";
+}
+.Block4 li:hover{
+    background-color: rgb(200, 255, 0);
+    color: rgb(17, 0, 255);
+list-style-type: "\274C";
+width: 70%;
+height: 140px;
+}
+.nav{
+    position: sticky;
+    top: 0;
+}
+
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f42424;
+    font-size: 20px;
+    width: 100%;
+    border:3px solid #fff700 ;
+    text-align: center;
+    overflow: hidden;
+}
+.nav a{
+display: block;
+text-decoration: none;
+color:#fff700;
+padding: 4px 8px;
+float: left;
+}
+.nav a:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.block5{
+    width: 100%;
+    height:100%;
+    padding: 50px;
+    background-color:darkred;
+}
+.btn1{
+    width: 300px;
+    height: 70px;
+    background-color: crimson;
+    color: #fff700;
+    padding: 15px 30px;
+    font-size: 30px;
+    text-align: left;
+    text-decoration: none;
+    border: 1px solid red;
+    display: inline-block;
+    border-radius:30%;
+    box-shadow: 0 8px 16px yellow;
+}
+.btn1:hover{
+    background-color:red ;
+    color:rgb(72, 255, 0) ;
+    border: 2px solid yellow;
+}
+.btn1:active {
+    background-color: rgb(0, 255, 255);
+    color: blueviolet;
+}
+form{
+    width:400px;         /*Ширина блока*/
+float: right;         /*Сторона выравнивания*/
+display: flex;        /*Расположения в один ряд*/
+}
+input{
+    padding: 10px 20px;   /*Внутренний отсуп сверху и снизу по 10, а по бокам 20*/
+border: 1px;          /*Рамка */
+font-size: 20px;      /*Размер текста*/
+}
+.search{
+    width: 100%;
+}
+.buttom{
+    width: 25%;
+    background-color: crimson;
+    color: aliceblue;
+}
+.buttom:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    color: red;
+}
